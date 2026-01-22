@@ -3,6 +3,10 @@
     "include": ["src/ui/**/*", "src/figma/**/*"],
     "exclude": ["src/figma/icons/*"],
     "parser": "react",
+    "git": {
+      "remote": "https://github.com/jmbaquerosanchez/sds",
+      "branch": "main"
+    },
     "importPaths": {
       "ui/compositions/**/*": "compositions",
       "ui/icons/*": "icons",
