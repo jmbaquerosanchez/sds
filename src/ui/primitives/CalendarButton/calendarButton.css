@@ -1,0 +1,81 @@
+.calendar-button {
+  --calendar-button-size: var(--sds-typography-scale-07);
+  --calendar-button-background: transparent;
+  --calendar-button-border-color: transparent;
+  --calendar-button-color: var(--sds-color-text-default-default);
+  align-items: center;
+  background: var(--calendar-button-background);
+  border: var(--sds-size-stroke-border) solid var(--calendar-button-border-color);
+  border-radius: var(--sds-size-radius-200);
+  box-sizing: border-box;
+  color: var(--calendar-button-color);
+  cursor: pointer;
+  display: inline-flex;
+  font: var(--sds-font-body-base);
+  font-variant-numeric: tabular-nums;
+  gap: 0;
+  height: var(--calendar-button-size);
+  justify-content: center;
+  line-height: 1.4;
+  min-width: var(--calendar-button-size);
+  padding: 0;
+  position: relative;
+  text-align: center;
+  transition: background-color 0.2s ease, color 0.2s ease,
+    border-color 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  width: var(--calendar-button-size);
+}
+
+.calendar-button[data-focus-visible] {
+  outline: none;
+}
+
+.calendar-button[data-focus-visible]::after {
+  content: "";
+  border-radius: calc(var(--sds-size-radius-200) + var(--sds-size-stroke-border));
+  bottom: calc(-1 * var(--sds-size-stroke-border));
+  box-shadow: 0 0 0 var(--global-focus-ring-size) var(--global-focus-ring-color);
+  left: calc(-1 * var(--sds-size-stroke-border));
+  pointer-events: none;
+  position: absolute;
+  right: calc(-1 * var(--sds-size-stroke-border));
+  top: calc(-1 * var(--sds-size-stroke-border));
+}
+
+.calendar-button[data-hovered]:not([data-disabled]) {
+  --calendar-button-background: var(--sds-color-background-default-default);
+  --calendar-button-border-color: var(--sds-color-border-default-default);
+  --calendar-button-color: var(--sds-color-text-brand-default);
+}
+
+.calendar-button[data-selected] {
+  --calendar-button-background: var(--sds-color-background-brand-default);
+  --calendar-button-border-color: var(--sds-color-background-brand-default);
+  --calendar-button-color: var(--sds-color-text-brand-on-brand);
+}
+
+.calendar-button[data-range] {
+  --calendar-button-background: var(--sds-color-background-default-secondary);
+  --calendar-button-border-color: var(--sds-color-background-default-secondary);
+  --calendar-button-color: var(--sds-color-text-brand-default);
+}
+
+.calendar-button[data-disabled] {
+  cursor: default;
+  pointer-events: none;
+  --calendar-button-color: var(--sds-color-text-disabled-default);
+}
+
+.calendar-button[data-range][data-disabled] {
+  --calendar-button-color: var(--sds-color-text-disabled-default);
+}
+
+.calendar-button--hidden {
+  cursor: default;
+  pointer-events: none;
+  visibility: hidden;
+}
