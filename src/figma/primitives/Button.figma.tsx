@@ -26,6 +26,7 @@ figma.connect(Button, "<FIGMA_BUTTONS_BUTTON>", {
       Primary: "primary",
       Neutral: "neutral",
       Subtle: "subtle",
+      Redsift: "redsift",
     }),
   },
   example: ({ label, iconEnd, iconStart, ...props }) => (

@@ -45,7 +45,7 @@ export const Button = React.forwardRef(function Button(
 export type ButtonDangerProps = Omit<ButtonBaseProps, "variant"> & {
   variant?: Exclude<
     ButtonBaseProps["variant"],
-    "primary" | "subtle" | "neutral"
+    "primary" | "subtle" | "neutral" | "redsift"
   >;
 };
 /**
@@ -95,6 +95,7 @@ type ButtonBaseProps = {
     | "primary"
     | "neutral"
     | "subtle"
+    | "redsift"
     | "danger-primary"
     | "danger-subtle";
 } & AnchorOrButtonProps;

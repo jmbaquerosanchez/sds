@@ -1,8 +1,9 @@
 .button {
   --border-radius: var(--sds-size-radius-200);
-  align-items: center;
-  box-shadow: inset 0 0 0 var(--sds-size-stroke-border)
+  --button-shadow: inset 0 0 0 var(--sds-size-stroke-border)
     var(--button-border-color);
+  align-items: center;
+  box-shadow: var(--button-shadow);
   border-radius: var(--border-radius);
   background: var(--button-background-color);
   color: var(--button-color);
@@ -88,6 +89,19 @@
   }
 }
 
+.button-variant-redsift {
+  --button-background-color: var(--sds-color-background-positive-default);
+  --button-border-color: var(--sds-color-border-danger-secondary);
+  --button-color: var(--sds-color-text-default-default);
+  --button-shadow: var(--sds-effects-shadows-drop-shadow-200),
+    inset 0 0 0 var(--sds-size-stroke-border) var(--button-border-color);
+  &[data-hovered]:not([data-disabled]) {
+    --button-background-color: var(--sds-color-background-warning-hover);
+    --button-border-color: var(--sds-color-border-brand-default);
+    --button-color: var(--sds-color-text-brand-on-brand);
+  }
+}
+
 .button-variant-danger-primary {
   --button-background-color: var(--sds-color-background-danger-default);
   --button-border-color: var(--sds-color-border-danger-secondary);
@@ -114,6 +128,14 @@
   --button-background-color: var(--sds-color-background-disabled-default);
   --button-border-color: var(--sds-color-border-disabled-default);
   --button-color: var(--sds-color-text-disabled-default);
+}
+
+.button.button-variant-redsift[data-disabled] {
+  --button-background-color: var(--sds-color-background-positive-secondary);
+  --button-border-color: var(--sds-color-border-disabled-default);
+  --button-color: var(--sds-color-text-disabled-on-disabled);
+  --button-shadow: inset 0 0 0 var(--sds-size-stroke-border)
+    var(--button-border-color);
 }
 
 .button-group {

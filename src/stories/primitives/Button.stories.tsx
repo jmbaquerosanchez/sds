@@ -14,6 +14,7 @@ export const StoryButton: StoryObj<typeof Button> = {
   args: {
     children: "Hello world",
     variant: "primary",
+    isDisabled: false,
   },
   argTypes: {
     children: {
@@ -24,8 +25,9 @@ export const StoryButton: StoryObj<typeof Button> = {
     },
     variant: {
       control: { type: "select" },
-      options: ["primary", "neutral", "subtle"],
+      options: ["primary", "neutral", "subtle", "redsift"],
     },
+    isDisabled: { control: { type: "boolean" } },
   },
   render: ({ children, ...props }) => (
     <Button {...props}>
