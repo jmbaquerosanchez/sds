@@ -1,22 +1,21 @@
 import figma from "@figma/code-connect";
-import { CALENDAR_SELECT_MONTHS, CalendarSelect } from "primitives";
-
-const monthEnum = CALENDAR_SELECT_MONTHS.reduce<Record<string, string>>(
-  (acc, option) => ({
-    ...acc,
-    [option.label]: option.id,
-  }),
-  {},
-);
+import { CalendarSelect } from "primitives";
 
 const baseProps = {
-  isDisabled: figma.enum("State", { Disabled: true }),
-  defaultSelectedKey: figma.enum("Value", monthEnum),
-  placeholder: figma.enum("Value Type", {
-    default: "Select month",
-    Placeholder: figma.string("Placeholder"),
+  defaultSelectedKey: figma.enum("Value", {
+    January: "january",
+    February: "february",
+    March: "march",
+    April: "april",
+    May: "may",
+    June: "june",
+    July: "july",
+    August: "august",
+    September: "september",
+    October: "october",
+    November: "november",
+    December: "december",
   }),
-  isOpen: figma.enum("Open", { Open: true }),
 };
 
 figma.connect(CalendarSelect, "<FIGMA_CALENDAR_SELECT>", {
