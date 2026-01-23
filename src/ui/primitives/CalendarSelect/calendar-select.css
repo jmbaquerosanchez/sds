@@ -1,0 +1,19 @@
+.calendar-select {
+  --calendar-select-padding-block: var(--sds-size-space-150);
+  --calendar-select-padding-inline: var(--sds-size-space-200);
+}
+
+.calendar-select .field {
+  --field-row-gap: var(--sds-size-space-200);
+}
+
+.calendar-select .select {
+  min-block-size: var(--sds-size-calendar-select-height);
+  padding: var(--calendar-select-padding-block)
+    var(--calendar-select-padding-inline);
+}
+
+.calendar-select .select > .icon {
+  block-size: var(--sds-size-space-300);
+  inline-size: var(--sds-size-space-300);
+}
