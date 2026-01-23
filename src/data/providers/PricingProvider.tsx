@@ -22,7 +22,8 @@ export function PricingProvider({ children }: { children?: ReactNode }) {
         setMonthlyPlans(monthly);
         setAnnualPlans(annual);
         setCurrentPlan(monthly[0]);
-      } catch (err) {
+      } catch (error) {
+        console.error("Failed to load pricing plans", error);
       } finally {
         setIsLoading(false);
       }

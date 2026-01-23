@@ -11,7 +11,7 @@ export type CalendarSelectOption = {
   label: string;
 };
 
-export const CALENDAR_SELECT_MONTHS: readonly CalendarSelectOption[] = [
+const CALENDAR_SELECT_MONTHS: readonly CalendarSelectOption[] = [
   { id: "january", label: "January" },
   { id: "february", label: "February" },
   { id: "march", label: "March" },

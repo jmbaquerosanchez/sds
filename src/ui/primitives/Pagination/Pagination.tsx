@@ -11,7 +11,7 @@ export function Pagination({
   className,
   ...props
 }: PaginationProps) {
-  const classNames = clsx("pagination");
+  const classNames = clsx("pagination", className);
   return <nav aria-label={ariaLabel} {...props} className={classNames} />;
 }
 
@@ -73,16 +73,15 @@ export function PaginationPage({
       aria-label={`Page ${children}`}
       aria-current={current ? "page" : undefined}
       variant={current ? "primary" : "subtle"}
-      className={clsx()}
     >
-      <span className="">{children}</span>
+      <span>{children}</span>
     </Button>
   );
 }
 
 export function PaginationGap() {
   return (
-    <div aria-hidden="true" className="">
+    <div aria-hidden="true">
       &hellip;
     </div>
   );

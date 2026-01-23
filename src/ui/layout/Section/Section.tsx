@@ -32,20 +32,20 @@ export function Section({
   paddingTop,
   ...props
 }: SectionProps) {
-  const { variant = "subtle", ...spreadProps } = props;
+  const { variant = "subtle", src, ...spreadProps } = props;
   const classNames = clsx(
     className,
     "section",
-    `section-variant-${props.variant}`,
+    `section-variant-${variant}`,
     `section-padding-top-${paddingTop || padding}`,
     `section-padding-bottom-${paddingBottom || padding}`,
   );
   const image =
-    props.variant === "image" ? (
+    variant === "image" ? (
       <Image
         alt="Background image"
         role="presentation"
-        src={props.src}
+        src={src}
         size="fill"
         aspectRatio="fill"
         className="section-image"

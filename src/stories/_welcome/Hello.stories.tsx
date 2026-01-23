@@ -9,13 +9,15 @@ import {
   TextListItem,
 } from "primitives";
 
-const meta: Meta<typeof HTMLIFrameElement> = {
+const meta = {
   title: "SDS/Hello",
   parameters: { layout: "centered" },
-};
-export default meta;
+} satisfies Meta<typeof Section>;
 
-export const StoryHello: StoryObj<{}> = {
+export default meta;
+type Story = StoryObj<typeof meta>;
+
+export const StoryHello: Story = {
   name: "Hello",
   render: () => (
     <Section>

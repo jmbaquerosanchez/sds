@@ -21,8 +21,6 @@ export type AccordionItemProps = DisclosureProps & { title: string };
 export function AccordionItem({
   className,
   title,
-  isExpanded,
-  isDisabled,
   children,
   ...props
 }: AccordionItemProps) {

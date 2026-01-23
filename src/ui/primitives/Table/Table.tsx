@@ -83,7 +83,8 @@ export function TableBody<T extends object>({
   className,
   ...props
 }: TableBodyProps<T>) {
-  return <RACTableBody {...props} />;
+  const classNames = clsx(className, "table-body");
+  return <RACTableBody {...props} className={classNames} />;
 }
 
 export type TableHeadProps<T> = RACTableHeaderProps<T>;

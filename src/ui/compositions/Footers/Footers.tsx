@@ -18,6 +18,7 @@ export function Footer({ className, ...props }: FooterProps) {
   return (
     <Section
       elementType="footer"
+      className={className}
       variant="brand"
       paddingTop="1600"
       paddingBottom="4000"

@@ -45,7 +45,6 @@ export const PrefilledRange: Story = {
 };
 
 export const LocalizedLabels: Story = {
-  name: "Localized Labels",
   render: () => {
     const baseRange: CalendarRange = useMemo(
       () => ({ start: new Date(2025, 8, 9), end: new Date(2025, 8, 13) }),

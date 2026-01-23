@@ -21,11 +21,9 @@ export const Button = React.forwardRef(function Button(
     `button-variant-${variant}`,
   );
 
-  const { style, ...sharedProps } = props;
-
   return isAnchorProps(props) ? (
     <RACLink
-      {...sharedProps}
+      {...props}
       className={classNames}
       ref={ref as React.ForwardedRef<HTMLAnchorElement>}
     >
@@ -33,7 +31,7 @@ export const Button = React.forwardRef(function Button(
     </RACLink>
   ) : (
     <RACButton
-      {...sharedProps}
+      {...props}
       className={classNames}
       ref={ref as React.ForwardedRef<HTMLButtonElement>}
     >
@@ -67,11 +65,9 @@ export const ButtonDanger = React.forwardRef(function Button(
     `button-variant-${variant}`,
   );
 
-  const { style, ...sharedProps } = props;
-
   return isAnchorProps(props) ? (
     <RACLink
-      {...sharedProps}
+      {...props}
       className={classNames}
       ref={ref as React.ForwardedRef<HTMLAnchorElement>}
     >
@@ -79,7 +75,7 @@ export const ButtonDanger = React.forwardRef(function Button(
     </RACLink>
   ) : (
     <RACButton
-      {...sharedProps}
+      {...props}
       className={classNames}
       ref={ref as React.ForwardedRef<HTMLButtonElement>}
     >
