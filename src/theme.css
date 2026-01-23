@@ -388,6 +388,7 @@
 :root {
   --sds-size-blur-100: 0.25rem;
   --sds-size-calendar-button: 2.5rem;
+  --sds-size-calendar-select-height: 1.75rem;
   --sds-size-depth-0: 0rem;
   --sds-size-depth-025: 0.0625rem;
   --sds-size-depth-100: 0.25rem;

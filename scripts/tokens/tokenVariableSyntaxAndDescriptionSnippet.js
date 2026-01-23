@@ -140,6 +140,7 @@ Promise.all([
   ["VariableID:197:17451", "var(--sds-size-stroke-focus-ring)", ""],
   ["VariableID:228:6769", "var(--sds-size-blur-100)", ""],
   ["VariableID:3071:1191", "var(--sds-size-calendar-button)", ""],
+  ["VariableID:3129:470", "var(--sds-size-calendar-select-height)", ""],
   ["VariableID:346:10896", "var(--sds-size-space-4000)", ""],
   ["VariableID:346:10902", "var(--sds-size-space-800)", ""],
   ["VariableID:346:10903", "var(--sds-size-space-1200)", ""],
