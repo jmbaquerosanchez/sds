@@ -27,13 +27,15 @@ async function go() {
         .filter((a) => a.visible)
         .map((effect) => {
           const variables = {};
-          for (let property in effect.boundVariables) {
-            variables[property] = figma.variables.getVariableById(
-              effect.boundVariables[property].id
-            ).name;
+          const boundVariables = effect.boundVariables || {};
+          for (let property in boundVariables) {
+            const variable = figma.variables.getVariableById(
+              boundVariables[property].id
+            );
+            variables[property] = variable ? variable.name : null;
           }
-          const hex = colorToHex(effect.color);
-          return { ...effect, hex, variables };
+          const hex = effect.color ? colorToHex(effect.color) : null;
+          return Object.assign({}, effect, { hex, variables });
         });
       payload.push(JSON.stringify({ type, name, effects: newEffects }));
     }
@@ -43,12 +45,14 @@ async function go() {
       .filter((a) => a.visible)
       .map((paint) => {
         const variables = {};
-        for (let property in paint.boundVariables) {
-          variables[property] = figma.variables.getVariableById(
-            paint.boundVariables[property].id
-          ).name;
+        const boundVariables = paint.boundVariables || {};
+        for (let property in boundVariables) {
+          const variable = figma.variables.getVariableById(
+            boundVariables[property].id
+          );
+          variables[property] = variable ? variable.name : null;
         }
-        return { ...paint, variables };
+        return Object.assign({}, paint, { variables });
       });
     payload.push(JSON.stringify({ type, name, paints: newPaints }));
   });
@@ -71,10 +75,12 @@ async function go() {
       boundVariables,
     }) => {
       const variables = {};
-      for (let property in boundVariables) {
-        variables[property] = figma.variables.getVariableById(
-          boundVariables[property].id
-        ).name;
+      const safeBoundVariables = boundVariables || {};
+      for (let property in safeBoundVariables) {
+        const variable = figma.variables.getVariableById(
+          safeBoundVariables[property].id
+        );
+        variables[property] = variable ? variable.name : null;
       }
       payload.push(
         JSON.stringify({
@@ -92,7 +98,7 @@ async function go() {
           handingPunctiation,
           handlingList,
           textCase,
-          boundVariables,
+          boundVariables: safeBoundVariables,
           variables,
         })
       );

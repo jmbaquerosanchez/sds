@@ -1,5 +1,5 @@
 .calendar-button {
-  --calendar-button-size: var(--sds-typography-scale-07);
+  --calendar-button-size: var(--sds-size-calendar-button);
   --calendar-button-background: transparent;
   --calendar-button-border-color: transparent;
   --calendar-button-color: var(--sds-color-text-default-default);

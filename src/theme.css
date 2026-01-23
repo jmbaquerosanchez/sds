@@ -13,6 +13,16 @@
   --sds-color-black-700: #0c0c0dd9;
   --sds-color-black-800: #0c0c0de5;
   --sds-color-black-900: #0c0c0df2;
+  --sds-color-blue-100: #f1f6fd;
+  --sds-color-blue-1000: #15253f;
+  --sds-color-blue-200: #e1ebfa;
+  --sds-color-blue-300: #c0d4f5;
+  --sds-color-blue-400: #9ebef1;
+  --sds-color-blue-500: #3f81ea;
+  --sds-color-blue-600: #3271d7;
+  --sds-color-blue-700: #2a61ba;
+  --sds-color-blue-800: #224a8a;
+  --sds-color-blue-900: #183057;
   --sds-color-brand-100: #f5f5f5;
   --sds-color-brand-1000: #111111;
   --sds-color-brand-200: #e6e6e6;
@@ -114,7 +124,7 @@
   --sds-color-background-default-secondary-hover: var(--sds-color-gray-200);
   --sds-color-background-default-tertiary: var(--sds-color-gray-300);
   --sds-color-background-default-tertiary-hover: var(--sds-color-gray-400);
-  --sds-color-background-disabled-default: var(--sds-color-brand-300);
+  --sds-color-background-disabled-default: var(--sds-color-gray-300);
   --sds-color-background-neutral-default: var(--sds-color-slate-700);
   --sds-color-background-neutral-hover: var(--sds-color-slate-800);
   --sds-color-background-neutral-secondary: var(--sds-color-slate-300);
@@ -146,7 +156,7 @@
   --sds-color-border-default-default: var(--sds-color-gray-300);
   --sds-color-border-default-secondary: var(--sds-color-gray-500);
   --sds-color-border-default-tertiary: var(--sds-color-gray-700);
-  --sds-color-border-disabled-default: var(--sds-color-brand-400);
+  --sds-color-border-disabled-default: var(--sds-color-gray-400);
   --sds-color-border-neutral-default: var(--sds-color-slate-900);
   --sds-color-border-neutral-secondary: var(--sds-color-slate-600);
   --sds-color-border-neutral-tertiary: var(--sds-color-slate-400);
@@ -173,8 +183,8 @@
   --sds-color-icon-default-default: var(--sds-color-gray-900);
   --sds-color-icon-default-secondary: var(--sds-color-gray-500);
   --sds-color-icon-default-tertiary: var(--sds-color-gray-400);
-  --sds-color-icon-disabled-default: var(--sds-color-brand-400);
-  --sds-color-icon-disabled-on-disabled: var(--sds-color-brand-400);
+  --sds-color-icon-disabled-default: var(--sds-color-gray-400);
+  --sds-color-icon-disabled-on-disabled: var(--sds-color-gray-400);
   --sds-color-icon-neutral-default: var(--sds-color-slate-900);
   --sds-color-icon-neutral-on-neutral: var(--sds-color-slate-100);
   --sds-color-icon-neutral-on-neutral-secondary: var(--sds-color-slate-900);
@@ -210,8 +220,8 @@
   --sds-color-text-default-default: var(--sds-color-gray-900);
   --sds-color-text-default-secondary: var(--sds-color-gray-500);
   --sds-color-text-default-tertiary: var(--sds-color-gray-400);
-  --sds-color-text-disabled-default: var(--sds-color-brand-400);
-  --sds-color-text-disabled-on-disabled: var(--sds-color-brand-400);
+  --sds-color-text-disabled-default: var(--sds-color-gray-400);
+  --sds-color-text-disabled-on-disabled: var(--sds-color-gray-400);
   --sds-color-text-neutral-default: var(--sds-color-slate-900);
   --sds-color-text-neutral-on-neutral: var(--sds-color-slate-100);
   --sds-color-text-neutral-on-neutral-secondary: var(--sds-color-slate-900);
@@ -254,7 +264,7 @@
     --sds-color-background-default-secondary-hover: var(--sds-color-gray-900);
     --sds-color-background-default-tertiary: var(--sds-color-gray-600);
     --sds-color-background-default-tertiary-hover: var(--sds-color-gray-700);
-    --sds-color-background-disabled-default: var(--sds-color-brand-700);
+    --sds-color-background-disabled-default: var(--sds-color-gray-700);
     --sds-color-background-neutral-default: var(--sds-color-slate-400);
     --sds-color-background-neutral-hover: var(--sds-color-slate-500);
     --sds-color-background-neutral-secondary: var(--sds-color-slate-900);
@@ -286,7 +296,7 @@
     --sds-color-border-default-default: var(--sds-color-gray-600);
     --sds-color-border-default-secondary: var(--sds-color-gray-500);
     --sds-color-border-default-tertiary: var(--sds-color-gray-400);
-    --sds-color-border-disabled-default: var(--sds-color-brand-600);
+    --sds-color-border-disabled-default: var(--sds-color-gray-600);
     --sds-color-border-neutral-default: var(--sds-color-slate-100);
     --sds-color-border-neutral-secondary: var(--sds-color-slate-500);
     --sds-color-border-neutral-tertiary: var(--sds-color-slate-600);
@@ -313,8 +323,8 @@
     --sds-color-icon-default-default: var(--sds-color-white-1000);
     --sds-color-icon-default-secondary: var(--sds-color-white-500);
     --sds-color-icon-default-tertiary: var(--sds-color-white-400);
-    --sds-color-icon-disabled-default: var(--sds-color-brand-500);
-    --sds-color-icon-disabled-on-disabled: var(--sds-color-brand-400);
+    --sds-color-icon-disabled-default: var(--sds-color-gray-500);
+    --sds-color-icon-disabled-on-disabled: var(--sds-color-gray-400);
     --sds-color-icon-neutral-default: var(--sds-color-slate-200);
     --sds-color-icon-neutral-on-neutral: var(--sds-color-slate-1000);
     --sds-color-icon-neutral-on-neutral-secondary: var(--sds-color-slate-100);
@@ -350,8 +360,8 @@
     --sds-color-text-default-default: var(--sds-color-white-1000);
     --sds-color-text-default-secondary: var(--sds-color-white-500);
     --sds-color-text-default-tertiary: var(--sds-color-white-400);
-    --sds-color-text-disabled-default: var(--sds-color-brand-500);
-    --sds-color-text-disabled-on-disabled: var(--sds-color-brand-400);
+    --sds-color-text-disabled-default: var(--sds-color-gray-500);
+    --sds-color-text-disabled-on-disabled: var(--sds-color-gray-400);
     --sds-color-text-neutral-default: var(--sds-color-slate-200);
     --sds-color-text-neutral-on-neutral: var(--sds-color-slate-1000);
     --sds-color-text-neutral-on-neutral-secondary: var(--sds-color-slate-100);
@@ -377,6 +387,7 @@
 /* size: default (default) */
 :root {
   --sds-size-blur-100: 0.25rem;
+  --sds-size-calendar-button: 2.5rem;
   --sds-size-depth-0: 0rem;
   --sds-size-depth-025: 0.0625rem;
   --sds-size-depth-100: 0.25rem;
@@ -492,35 +503,35 @@
 }
 /* styles */
 :root {
-  --sds-font-title-hero: normal var(--sds-typography-title-hero-font-weight) var(--sds-typography-title-hero-size) var(--sds-typography-title-hero-font-family);
-  --sds-font-title-page: normal var(--sds-typography-title-page-font-weight) var(--sds-typography-title-page-size-base) var(--sds-typography-title-page-font-family);
-  --sds-font-subtitle: normal var(--sds-typography-subtitle-font-weight) var(--sds-typography-subtitle-size-base) var(--sds-typography-subtitle-font-family);
-  --sds-font-heading: normal var(--sds-typography-heading-font-weight) var(--sds-typography-heading-size-base) var(--sds-typography-heading-font-family);
-  --sds-font-subheading: normal var(--sds-typography-subheading-font-weight) var(--sds-typography-subheading-size-medium) var(--sds-typography-subheading-font-family);
-  --sds-font-body-base: normal var(--sds-typography-body-font-weight-regular) var(--sds-typography-body-size-medium) var(--sds-typography-body-font-family);
-  --sds-font-body-strong: normal var(--sds-typography-body-font-weight-strong) var(--sds-typography-body-size-medium) var(--sds-typography-body-font-family);
-  --sds-font-body-emphasis: var(--sds-typography-body-font-style-italic)  var(--sds-typography-body-size-medium) var(--sds-typography-body-font-family);
-  --sds-font-body-link: normal var(--sds-typography-body-font-weight-regular) var(--sds-typography-body-size-medium) var(--sds-typography-body-font-family);
-  --sds-font-body-small: normal var(--sds-typography-body-font-weight-regular) var(--sds-typography-body-size-small) var(--sds-typography-body-font-family);
-  --sds-font-body-small-strong: normal var(--sds-typography-body-font-weight-strong) var(--sds-typography-body-size-small) var(--sds-typography-body-font-family);
-  --sds-font-single-line-body-base: normal var(--sds-typography-body-font-weight-regular) var(--sds-typography-body-size-medium) var(--sds-typography-body-font-family);
-  --sds-font-body-code: normal var(--sds-typography-code-font-weight) var(--sds-typography-code-size-base) var(--sds-typography-code-font-family);
-  --sds-font-single-line-body-small-strong: normal var(--sds-typography-body-font-weight-strong) var(--sds-typography-body-size-small) var(--sds-typography-body-font-family);
-  --sds-font-utilities-component-notes-regular: normal var(--sds-typography-weight-regular) var(--sds-typography-scale-03) var(--sds-typography-family-mono);
-  --sds-font-utilities-component-notes-bold: normal var(--sds-typography-weight-bold) var(--sds-typography-scale-03) var(--sds-typography-family-mono);
-  --sds-effects-shadows-drop-shadow-300: var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-025) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-025) var(--sds-color-black-200);
-  --sds-effects-shadows-drop-shadow-200: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-200);
+  --sds-font-title-hero: normal  72 ;
+  --sds-font-title-page: normal  48 ;
+  --sds-font-subtitle: normal  32 ;
+  --sds-font-heading: normal  24 ;
+  --sds-font-subheading: normal  20 ;
+  --sds-font-body-base: normal  16 ;
+  --sds-font-body-strong: normal  16 ;
+  --sds-font-body-emphasis: normal  16 ;
+  --sds-font-body-link: normal  16 ;
+  --sds-font-body-small: normal  14 ;
+  --sds-font-body-small-strong: normal  14 ;
+  --sds-font-body-code: normal  16 ;
+  --sds-font-single-line-body-base: normal  16 ;
+  --sds-font-single-line-body-small-strong: normal  14 ;
+  --sds-font-utilities-component-notes-regular: normal  16 ;
+  --sds-font-utilities-component-notes-bold: normal  16 ;
   --sds-effects-shadows-drop-shadow-100: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
+  --sds-effects-shadows-drop-shadow-200: var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-200);
+  --sds-effects-shadows-drop-shadow-300: var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-025) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-025) var(--sds-color-black-200);
   --sds-effects-shadows-drop-shadow-400: var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-100) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-800) var(--sds-size-depth-negative-100) var(--sds-color-black-200);
   --sds-effects-shadows-drop-shadow-500: var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-100) var(--sds-color-black-100), var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-400) var(--sds-size-depth-negative-200) var(--sds-color-black-200);
   --sds-effects-shadows-drop-shadow-600: var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-800) var(--sds-size-depth-negative-200) var(--sds-color-black-400);
+  --sds-effects-backdrop-filter-blur-overlay: blur(var(--sds-size-blur-100));
+  --sds-effects-filter-blur-layer: blur(var(--sds-size-blur-100));
+  --sds-effects-backdrop-filter-blur-glass: blur(var(--sds-size-blur-100));
   --sds-effects-shadows-inner-shadow-100: inset var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-blur-100) var(--sds-size-depth-0) var(--sds-color-black-100);
   --sds-effects-shadows-inner-shadow-200: inset var(--sds-size-depth-0) var(--sds-size-depth-025) var(--sds-size-depth-100) var(--sds-size-depth-0) var(--sds-color-black-100);
   --sds-effects-shadows-inner-shadow-300: inset var(--sds-size-depth-0) var(--sds-size-depth-100) var(--sds-size-depth-100) var(--sds-size-depth-negative-025) var(--sds-color-black-100);
   --sds-effects-shadows-inner-shadow-400: inset var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-800) var(--sds-size-depth-negative-100) var(--sds-color-black-200);
   --sds-effects-shadows-inner-shadow-500: inset var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-400) var(--sds-size-depth-negative-200) var(--sds-color-black-200);
   --sds-effects-shadows-inner-shadow-600: inset var(--sds-size-depth-0) var(--sds-size-depth-400) var(--sds-size-depth-800) var(--sds-size-depth-negative-200) var(--sds-color-black-400);
-  --sds-effects-backdrop-filter-blur-overlay: blur(var(--sds-size-blur-100));
-  --sds-effects-filter-blur-layer: blur(var(--sds-size-blur-100));
-  --sds-effects-backdrop-filter-blur-glass: blur(var(--sds-size-blur-100));
 }

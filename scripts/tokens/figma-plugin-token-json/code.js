@@ -1,5 +1,5 @@
 const KEY_PREFIX_COLLECTION = `@`;
-const NAMESPACE = "org.sds";
+const NAMESPACE = "com.figma.sds";
 
 exportToJSON();
 
@@ -224,13 +224,15 @@ async function getEffects() {
         .filter((a) => a.visible)
         .map((effect) => {
           const variables = {};
-          for (let property in effect.boundVariables) {
-            variables[property] = figma.variables.getVariableById(
-              effect.boundVariables[property].id,
-            ).name;
-          }
-          const hex = colorToHex(effect.color);
-          return { ...effect, hex, variables };
+            const boundVariables = effect.boundVariables || {};
+            for (let property in boundVariables) {
+              const variable = figma.variables.getVariableById(
+                boundVariables[property].id,
+              );
+              variables[property] = variable ? variable.name : null;
+            }
+            const hex = effect.color ? colorToHex(effect.color) : null;
+            return Object.assign({}, effect, { hex, variables });
         });
       payload.push(JSON.stringify({ type, name, effects: newEffects }));
     },
@@ -245,7 +247,7 @@ async function getEffects() {
             paint.boundVariables[property].id,
           ).name;
         }
-        return { ...paint, variables };
+        return Object.assign({}, paint, { variables });
       });
     payload.push(JSON.stringify({ type, name, paints: newPaints }));
   });
@@ -268,10 +270,12 @@ async function getEffects() {
       boundVariables,
     }) => {
       const variables = {};
-      for (let property in boundVariables) {
-        variables[property] = figma.variables.getVariableById(
-          boundVariables[property].id,
-        ).name;
+      const safeBoundVariables = boundVariables || {};
+      for (let property in safeBoundVariables) {
+        const variable = figma.variables.getVariableById(
+          safeBoundVariables[property].id,
+        );
+        variables[property] = variable ? variable.name : null;
       }
       payload.push(
         JSON.stringify({
@@ -289,7 +293,7 @@ async function getEffects() {
           handingPunctiation,
           handlingList,
           textCase,
-          boundVariables,
+          boundVariables: safeBoundVariables,
           variables,
         }),
       );

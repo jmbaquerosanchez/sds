@@ -510,17 +510,17 @@ async function processStyleJSON(data, variablesLookup) {
    * @returns {string}
    */
   function valueFromPossibleVariable(item = "") {
-    if (typeof item === "object") {
+    if (item && typeof item === "object") {
       // attempting to find bound variables
       const variable = variablesLookup[item.id];
       return variable ? `var(${variable.property})` : JSON.stringify(item);
-    } else if (item.match(/^[1-9]00$/)) {
+    } else if (typeof item === "string" && item.match(/^[1-9]00$/)) {
       // attempting to find variable for weights
       // the scenario where style is used so weight is int
       const variable = variablesLookup.find(({ value }) => value === item);
       return variable ? `var(${variable.property})` : item;
     }
-    return item;
+    return typeof item === "number" ? `${item}` : item;
   }
 
   /**
