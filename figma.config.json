@@ -1,28 +1,28 @@
 {
   "codeConnect": {
-    "include": ["src/ui/**/*", "src/figma/**/*"],
-    "exclude": ["src/figma/icons/*"],
+    "include": ["src/ds/ui/**/*", "src/ds/figma/**/*"],
+    "exclude": ["src/ds/figma/icons/*"],
     "parser": "react",
     "git": {
-      "remote": "https://github.com/jmbaquerosanchez/sds",
+      "remote": "https://github.com/jmbaquerosanchez/sds-poc.git",
       "branch": "main"
     },
     "importPaths": {
-      "ui/compositions/**/*": "compositions",
-      "ui/icons/*": "icons",
-      "ui/images/*": "images",
-      "ui/layout/**/*": "layout",
-      "ui/primitives/**/*": "primitives"
+      "ds/ui/compositions/**/*": "compositions",
+      "ds/ui/icons/*": "icons",
+      "ds/ui/images/*": "images",
+      "ds/ui/layout/**/*": "layout",
+      "ds/ui/primitives/**/*": "primitives"
     },
     "paths": {
-      "compositions": ["src/ui/compositions"],
-      "hooks": ["src/ui/hooks"],
-      "icons": ["src/ui/icons"],
-      "images": ["src/ui/images"],
-      "layout": ["src/ui/layout"],
-      "primitives": ["src/ui/primitives"],
-      "providers": ["src/ui/providers"],
-      "utils": ["src/ui/utils"]
+      "compositions": ["src/ds/ui/compositions"],
+      "hooks": ["src/ds/ui/hooks"],
+      "icons": ["src/ds/ui/icons"],
+      "images": ["src/ds/ui/images"],
+      "layout": ["src/ds/ui/layout"],
+      "primitives": ["src/ds/ui/primitives"],
+      "providers": ["src/ds/ui/providers"],
+      "utils": ["src/ds/ui/utils"]
     },
     "documentUrlSubstitutions": {
       "<FIGMA_ICONS_BASE>": "https://figma.com/design/1OQXUrddcTOYCxEPP19ZFr",

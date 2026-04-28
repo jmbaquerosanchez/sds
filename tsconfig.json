@@ -17,15 +17,17 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "./src",
     "paths": {
-      "data": ["./data"],
-      "compositions": ["./ui/compositions"],
-      "hooks": ["./ui/hooks"],
-      "icons": ["./ui/icons"],
-      "images": ["./ui/images"],
-      "layout": ["./ui/layout"],
-      "primitives": ["./ui/primitives"],
-      "utils": ["./ui/utils"]
-    }
+      "app": ["./app"],
+      "data": ["./ds/data"],
+      "compositions": ["./ds/ui/compositions"],
+      "hooks": ["./ds/ui/hooks"],
+      "icons": ["./ds/ui/icons"],
+      "images": ["./ds/ui/images"],
+      "layout": ["./ds/ui/layout"],
+      "primitives": ["./ds/ui/primitives"],
+      "utils": ["./ds/ui/utils"]
+    },
+    "types": ["vitest/globals"]
   },
   "include": ["src", "scripts"]
 }

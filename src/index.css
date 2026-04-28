@@ -7,6 +7,7 @@
   --global-focus-ring-size: var(--sds-size-stroke-focus-ring);
   --global-focus-ring-color: rgb(0, 106, 255);
   --global-line-height-paragraph: 1.4;
+  --global-line-height-heading: 1.2;
   --global-stack-top: 999;
   --global-stack-focus: 999;
   --global-stack-dialog-backdrop: 9999;
@@ -15,6 +16,62 @@
   --global-dialog-max-width: 32rem;
   --global-tooltip-max-width: calc(var(--global-dialog-max-width) / 2);
   --global-line-height-body: 1.6;
+}
+
+:root {
+  --sds-font-body-base: normal var(--sds-typography-body-font-weight-regular)
+    var(--sds-typography-body-size-medium) / var(--global-line-height-body)
+    var(--sds-typography-body-font-family);
+  --sds-font-body-strong: normal var(--sds-typography-body-font-weight-strong)
+    var(--sds-typography-body-size-medium) / var(--global-line-height-body)
+    var(--sds-typography-body-font-family);
+  --sds-font-body-emphasis: italic
+    var(--sds-typography-body-font-weight-regular)
+    var(--sds-typography-body-size-medium) / var(--global-line-height-body)
+    var(--sds-typography-body-font-family);
+  --sds-font-body-link: normal var(--sds-typography-body-font-weight-regular)
+    var(--sds-typography-body-size-medium) / var(--global-line-height-body)
+    var(--sds-typography-body-font-family);
+  --sds-font-body-small: normal var(--sds-typography-body-font-weight-regular)
+    var(--sds-typography-body-size-small) / var(--global-line-height-body)
+    var(--sds-typography-body-font-family);
+  --sds-font-body-small-strong: normal
+    var(--sds-typography-body-font-weight-strong)
+    var(--sds-typography-body-size-small) / var(--global-line-height-body)
+    var(--sds-typography-body-font-family);
+  --sds-font-body-code: normal var(--sds-typography-body-font-weight-regular)
+    var(--sds-typography-code-size-base) / var(--global-line-height-body)
+    var(--sds-typography-family-mono);
+  --sds-font-body: var(--sds-font-body-base);
+  --sds-font-input: var(--sds-font-body-base);
+  --sds-font-subtitle: normal var(--sds-typography-subtitle-font-weight)
+    var(--sds-typography-subtitle-size-base) /
+    var(--global-line-height-heading) var(--sds-typography-subtitle-font-family);
+  --sds-font-subheading: normal var(--sds-typography-subheading-font-weight)
+    var(--sds-typography-subheading-size-medium) /
+    var(--global-line-height-heading)
+    var(--sds-typography-subheading-font-family);
+  --sds-font-heading: normal var(--sds-typography-heading-font-weight)
+    var(--sds-typography-heading-size-base) /
+    var(--global-line-height-heading)
+    var(--sds-typography-heading-font-family);
+  --sds-font-title-page: normal var(--sds-typography-title-page-font-weight)
+    var(--sds-typography-title-page-size-base) /
+    var(--global-line-height-heading)
+    var(--sds-typography-title-page-font-family);
+  --sds-font-title-hero: normal var(--sds-typography-title-hero-font-weight)
+    var(--sds-typography-title-hero-size) / var(--global-line-height-heading)
+    var(--sds-typography-title-hero-font-family);
+  --sds-font-single-line-body-base: normal
+    var(--sds-typography-body-font-weight-regular)
+    var(--sds-typography-body-size-medium) / 1
+    var(--sds-typography-body-font-family);
+  --sds-font-single-line-body-small-strong: normal
+    var(--sds-typography-body-font-weight-strong)
+    var(--sds-typography-body-size-small) / 1
+    var(--sds-typography-body-font-family);
+  --sds-font-utilities-component-notes-regular: var(--sds-font-body-base);
+  --sds-font-utilities-component-notes-bold: var(--sds-font-body-strong);
 }
 
 .display-none-to-flex {
@@ -55,12 +112,16 @@ button,
 textarea,
 input,
 select {
-  font: var(--sds-font-body-base);
+  font-family: var(--sds-typography-body-font-family);
+  font-weight: var(--sds-typography-body-font-weight-regular);
+  font-size: var(--sds-typography-body-size-medium);
+  line-height: var(--global-line-height-body);
 }
 
 pre,
 code {
-  font: var(--sds-font-body-code);
+  font-family: var(--sds-typography-family-mono);
+  font-size: var(--sds-typography-code-size-base);
 }
 
 h1,
@@ -69,7 +130,8 @@ h3,
 h4,
 h5,
 h6 {
-  font: var(--sds-font-heading);
+  font-family: var(--sds-typography-heading-font-family);
+  font-weight: var(--sds-typography-heading-font-weight);
 }
 
 h1,

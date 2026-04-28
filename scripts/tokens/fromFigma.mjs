@@ -34,6 +34,18 @@ export async function getFileVariables(fileKey, nameSpace) {
       headers: { "X-FIGMA-TOKEN": TOKEN },
     });
     const data = await fileResponse.json();
+    
+    // Check for API errors
+    if (data.status && data.status !== 200) {
+      console.error("Figma API Error:", data);
+      throw new Error(`Figma API returned error: ${data.err || data.message || 'Unknown error'}`);
+    }
+    
+    if (!data.meta) {
+      console.error("Unexpected API response:", JSON.stringify(data, null, 2));
+      throw new Error("API response missing 'meta' field. Check console for details.");
+    }
+    
     return variablesRESTResponseToVariablesJSON(data, nameSpace);
   } catch (e) {
     throw e;

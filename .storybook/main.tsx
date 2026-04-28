@@ -3,8 +3,10 @@ import path from "path";
 
 const config: StorybookConfig = {
   stories: [
-    "../src/stories/**/*.mdx",
-    "../src/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../src/app/**/*.mdx",
+    "../src/app/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+    "../src/ds/stories/**/*.mdx",
+    "../src/ds/stories/**/*.stories.@(js|jsx|mjs|ts|tsx)",
   ],
 
   addons: [
@@ -24,14 +26,15 @@ const config: StorybookConfig = {
     if (config.resolve) {
       config.resolve.alias = {
         ...config.resolve.alias,
-        compositions: path.resolve(__dirname, "/src/ui/compositions"),
-        hooks: path.resolve(__dirname, "/src/ui/hooks"),
-        icons: path.resolve(__dirname, "/src/ui/icons"),
-        images: path.resolve(__dirname, "/src/ui/images"),
-        layout: path.resolve(__dirname, "/src/ui/layout"),
-        primitives: path.resolve(__dirname, "/src/ui/primitives"),
-        providers: path.resolve(__dirname, "/src/ui/providers"),
-        utils: path.resolve(__dirname, "/src/ui/utils"),
+        app: path.resolve(__dirname, "/src/app"),
+        compositions: path.resolve(__dirname, "/src/ds/ui/compositions"),
+        hooks: path.resolve(__dirname, "/src/ds/ui/hooks"),
+        icons: path.resolve(__dirname, "/src/ds/ui/icons"),
+        images: path.resolve(__dirname, "/src/ds/ui/images"),
+        layout: path.resolve(__dirname, "/src/ds/ui/layout"),
+        primitives: path.resolve(__dirname, "/src/ds/ui/primitives"),
+        providers: path.resolve(__dirname, "/src/ds/ui/providers"),
+        utils: path.resolve(__dirname, "/src/ds/ui/utils"),
       };
     }
 

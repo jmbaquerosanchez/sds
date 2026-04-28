@@ -1,0 +1,1067 @@
+{
+  "logout": {
+    "message": "Successfully logged out"
+  },
+  "login": {
+    "id": "1",
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "username": "john.doe",
+    "avatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=john.doe@example.com"
+  },
+  "plans": [
+    {
+      "id": "beginner-monthly",
+      "name": "Beginner",
+      "description": "Perfect for getting started",
+      "price": 5,
+      "currency": "$",
+      "interval": "month",
+      "features": [
+        "Promises",
+        "Intentions",
+        "240 credits"
+      ],
+      "sku": "1-beginner"
+    },
+    {
+      "id": "advanced-monthly",
+      "name": "Advanced",
+      "description": "For growing businesses",
+      "price": 10,
+      "currency": "$",
+      "interval": "month",
+      "features": [
+        "Kept promises",
+        "Better intentions",
+        "480 credits"
+      ],
+      "popular": true,
+      "sku": "2-advanced"
+    },
+    {
+      "id": "business-monthly",
+      "name": "Business",
+      "description": "Enterprise-grade features",
+      "price": 25,
+      "currency": "$",
+      "interval": "month",
+      "features": [
+        "Kept promises",
+        "Best intentions",
+        "Infinite credits"
+      ],
+      "sku": "3-business"
+    },
+    {
+      "id": "beginner-annual",
+      "name": "Beginner",
+      "description": "Perfect for getting started",
+      "price": 50,
+      "currency": "$",
+      "interval": "year",
+      "features": [
+        "Promises",
+        "Intentions",
+        "240 credits"
+      ],
+      "sku": "1-beginner"
+    },
+    {
+      "id": "advanced-annual",
+      "name": "Advanced",
+      "description": "For growing businesses",
+      "price": 100,
+      "currency": "$",
+      "interval": "year",
+      "features": [
+        "Kept promises",
+        "Better intentions",
+        "480 credits"
+      ],
+      "popular": true,
+      "sku": "2-advanced"
+    },
+    {
+      "id": "business-annual",
+      "name": "Business",
+      "description": "Enterprise-grade features",
+      "price": 250,
+      "currency": "$",
+      "interval": "year",
+      "features": [
+        "Kept promises",
+        "Best intentions",
+        "Infinite credits"
+      ],
+      "sku": "3-business"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Wireless Bluetooth Headphones",
+      "description": "Premium noise-canceling headphones with 30-hour battery life and crystal clear audio quality.",
+      "price": 89.99,
+      "currency": "$",
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/Wireless-Bluetooth-Headphones/1200/900",
+      "category": "Electronics",
+      "inStock": false,
+      "tags": [
+        "wireless",
+        "bluetooth",
+        "audio"
+      ],
+      "attributes": [],
+      "registeredTimestamp": "2026-02-04T15:13:48.872Z"
+    },
+    {
+      "id": "2",
+      "name": "Smart Fitness Tracker",
+      "description": "Advanced health monitoring with heart rate, sleep tracking, and GPS for all your fitness goals.",
+      "price": 149.99,
+      "currency": "$",
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/Smart-Fitness-Tracker/1200/900",
+      "category": "Fitness",
+      "inStock": true,
+      "types": [
+        "red",
+        "blue",
+        "black"
+      ],
+      "tags": [
+        "fitness",
+        "health",
+        "tracking"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-31T12:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Portable Phone Charger",
+      "description": "Ultra-compact 10,000mAh power bank with fast charging for all your mobile devices.",
+      "price": 29.99,
+      "currency": "$",
+      "rating": 4.7,
+      "imageUrl": "https://picsum.photos/seed/Portable-Phone-Charger/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "types": [
+        "white",
+        "black"
+      ],
+      "tags": [
+        "charging",
+        "portable",
+        "battery"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-30T12:00:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Coffee Bean Grinder",
+      "description": "Precision burr grinder for the perfect coffee experience with 15 grind settings.",
+      "price": 79.99,
+      "currency": "$",
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/Coffee-Beans-Grinders/1200/900",
+      "category": "Kitchen",
+      "inStock": false,
+      "tags": [
+        "coffee",
+        "grinder",
+        "kitchen"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2026-02-07T15:13:48.872Z"
+    },
+    {
+      "id": "5",
+      "name": "Yoga Mat Premium",
+      "description": "Non-slip eco-friendly yoga mat with superior cushioning and grip for all practice levels.",
+      "price": 45.99,
+      "currency": "$",
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/Yoga-Mat-Premium/1200/900",
+      "category": "Fitness",
+      "inStock": true,
+      "tags": [
+        "yoga",
+        "fitness",
+        "eco-friendly"
+      ],
+      "attributes": [],
+      "registeredTimestamp": "2023-12-28T12:00:00Z"
+    },
+    {
+      "id": "6",
+      "name": "LED Desk Lamp",
+      "description": "Adjustable brightness desk lamp with USB charging port and touch controls.",
+      "price": 39.99,
+      "currency": "$",
+      "rating": 4.3,
+      "imageUrl": "https://picsum.photos/seed/LED-Desks-Lamps/1200/900",
+      "category": "Office",
+      "inStock": true,
+      "tags": [
+        "lighting",
+        "desk",
+        "LED"
+      ],
+      "attributes": [],
+      "registeredTimestamp": "2026-02-09T15:13:48.872Z"
+    },
+    {
+      "id": "7",
+      "name": "Wireless Gaming Mouse",
+      "description": "High-precision gaming mouse with customizable RGB lighting and programmable buttons.",
+      "price": 69.99,
+      "currency": "$",
+      "rating": 4.6,
+      "imageUrl": "https://picsum.photos/seed/Wireless-Gaming-Mouse/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "gaming",
+        "mouse",
+        "RGB"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2026-02-10T15:13:48.872Z"
+    },
+    {
+      "id": "8",
+      "name": "Ceramic Dinnerware Set",
+      "description": "16-piece modern dinnerware set, dishwasher and microwave safe, perfect for entertaining.",
+      "price": 119.99,
+      "currency": "$",
+      "rating": 4.1,
+      "imageUrl": "https://picsum.photos/seed/Ceramic-Dinnerware-Set/1200/900",
+      "category": "Kitchen",
+      "inStock": true,
+      "tags": [
+        "dinnerware",
+        "ceramic",
+        "set"
+      ],
+      "attributes": [],
+      "registeredTimestamp": "2023-12-25T12:00:00Z"
+    },
+    {
+      "id": "9",
+      "name": "Bluetooth Speaker Waterproof",
+      "description": "Portable waterproof speaker with 360-degree sound and 12-hour battery life.",
+      "price": 54.99,
+      "currency": "$",
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/Bluetooth-Speaker-Waterproof/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "bluetooth",
+        "speaker",
+        "waterproof"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-24T12:00:00Z"
+    },
+    {
+      "id": "10",
+      "name": "Organic Cotton T-Shirt",
+      "description": "Soft, breathable organic cotton t-shirt available in multiple colors and sizes.",
+      "price": 24.99,
+      "currency": "$",
+      "rating": 4.3,
+      "imageUrl": "https://picsum.photos/seed/Organic-Cotton-T-Shirt/1200/900",
+      "category": "Clothing",
+      "inStock": true,
+      "tags": [
+        "organic",
+        "cotton",
+        "t-shirt"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-23T12:00:00Z"
+    },
+    {
+      "id": "11",
+      "name": "Stainless Steel Water Bottle",
+      "description": "Insulated water bottle keeps drinks cold for 24 hours or hot for 12 hours.",
+      "price": 32.99,
+      "currency": "$",
+      "rating": 4.9,
+      "imageUrl": "https://picsum.photos/seed/Stainless-Steel-Water-Bottle/1200/900",
+      "category": "Fitness",
+      "inStock": true,
+      "tags": [
+        "water bottle",
+        "insulated",
+        "stainless steel"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-22T12:00:00Z"
+    },
+    {
+      "id": "12",
+      "name": "Mechanical Keyboard RGB",
+      "description": "Tactile mechanical keyboard with customizable RGB backlighting and premium switches.",
+      "price": 129.99,
+      "currency": "$",
+      "rating": 4.7,
+      "imageUrl": "https://picsum.photos/seed/Mechanical-Keyboard-RGB/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "keyboard",
+        "mechanical",
+        "RGB"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-21T12:00:00Z"
+    },
+    {
+      "id": "13",
+      "name": "Essential Oil Diffuser",
+      "description": "Ultrasonic aromatherapy diffuser with LED lights and automatic shut-off timer.",
+      "price": 42.99,
+      "currency": "$",
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/Essential-Oils-Diffusers/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "diffuser",
+        "aromatherapy",
+        "essential oils"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-20T12:00:00Z"
+    },
+    {
+      "id": "14",
+      "name": "Phone Camera Lens Kit",
+      "description": "Professional lens attachment kit including wide-angle, macro, and fisheye lenses.",
+      "price": 35.99,
+      "currency": "$",
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/Phone-Camera-Lens-Kit/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "camera",
+        "lens",
+        "photography"
+      ],
+      "attributes": [],
+      "registeredTimestamp": "2023-12-19T12:00:00Z"
+    },
+    {
+      "id": "15",
+      "name": "Memory Foam Pillow",
+      "description": "Contoured memory foam pillow with cooling gel layer for optimal neck support.",
+      "price": 59.99,
+      "currency": "$",
+      "rating": 4.6,
+      "imageUrl": "https://picsum.photos/seed/Memory-Foam-Pillow/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "pillow",
+        "memory foam",
+        "cooling"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-18T12:00:00Z"
+    },
+    {
+      "id": "16",
+      "name": "Cast Iron Skillet",
+      "description": "Pre-seasoned cast iron skillet perfect for searing, baking, and everyday cooking.",
+      "price": 49.99,
+      "currency": "$",
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/Cast-Iron-Skillet/1200/900",
+      "category": "Kitchen",
+      "inStock": true,
+      "tags": [
+        "cast iron",
+        "skillet",
+        "cooking"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "registeredTimestamp": "2023-12-17T12:00:00Z"
+    },
+    {
+      "id": "17",
+      "name": "Laptop Stand Adjustable",
+      "description": "Ergonomic laptop stand with adjustable height and angle for better posture.",
+      "price": 67.99,
+      "currency": "$",
+      "rating": 4.3,
+      "imageUrl": "https://picsum.photos/seed/Laptop-Stand-Adjustable/1200/900",
+      "category": "Office",
+      "inStock": true,
+      "tags": [
+        "laptop",
+        "stand",
+        "ergonomic"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-16T12:00:00Z"
+    },
+    {
+      "id": "18",
+      "name": "Silk Sleep Mask",
+      "description": "Luxurious mulberry silk sleep mask for complete darkness and comfortable rest.",
+      "price": 19.99,
+      "currency": "$",
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/Silk-Sleep-Mask/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "sleep",
+        "mask",
+        "silk"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-15T12:00:00Z"
+    },
+    {
+      "id": "19",
+      "name": "Resistance Bands Set",
+      "description": "Complete resistance training set with multiple resistance levels and exercise guide.",
+      "price": 28.99,
+      "currency": "$",
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/Resistance-Bands-Set/1200/900",
+      "category": "Fitness",
+      "inStock": true,
+      "tags": [
+        "resistance",
+        "bands",
+        "exercise"
+      ],
+      "attributes": [],
+      "registeredTimestamp": "2026-02-22T15:13:48.872Z"
+    },
+    {
+      "id": "20",
+      "name": "Smart Home Hub",
+      "description": "Central control hub for all your smart home devices with voice assistant integration.",
+      "price": 99.99,
+      "currency": "$",
+      "rating": 4.1,
+      "imageUrl": "https://picsum.photos/seed/Smart-Home-Hub/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "smart home",
+        "hub",
+        "voice assistant"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-13T12:00:00Z"
+    },
+    {
+      "id": "21",
+      "name": "Bamboo Cutting Board",
+      "description": "Eco-friendly bamboo cutting board with juice groove and antimicrobial properties.",
+      "price": 34.99,
+      "currency": "$",
+      "rating": 4.7,
+      "imageUrl": "https://picsum.photos/seed/Bamboo-Cutting-Board/1200/900",
+      "category": "Kitchen",
+      "inStock": true,
+      "tags": [
+        "bamboo",
+        "cutting board",
+        "eco-friendly"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "registeredTimestamp": "2023-12-12T12:00:00Z"
+    },
+    {
+      "id": "22",
+      "name": "Wireless Car Charger",
+      "description": "Fast wireless charging mount for car with automatic clamping and ventilation cooling.",
+      "price": 44.99,
+      "currency": "$",
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/Wireless-Car-Charger/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "wireless",
+        "car charger",
+        "mount"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2026-02-25T15:13:48.872Z"
+    },
+    {
+      "id": "23",
+      "name": "Ceramic Space Heater",
+      "description": "Energy-efficient ceramic heater with remote control and safety features.",
+      "price": 89.99,
+      "currency": "$",
+      "rating": 4.3,
+      "imageUrl": "https://picsum.photos/seed/Ceramic-Space-Heater/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "heater",
+        "ceramic",
+        "energy efficient"
+      ],
+      "attributes": [
+        "size"
+      ],
+      "registeredTimestamp": "2023-12-10T12:00:00Z"
+    },
+    {
+      "id": "24",
+      "name": "Blue Light Glasses",
+      "description": "Stylish blue light blocking glasses to reduce eye strain from digital screens.",
+      "price": 39.99,
+      "currency": "$",
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/Blue-Light-Glasses/1200/900",
+      "category": "Health",
+      "inStock": true,
+      "tags": [
+        "glasses",
+        "blue light",
+        "eye strain"
+      ],
+      "attributes": [],
+      "registeredTimestamp": "2026-02-27T15:13:48.872Z"
+    },
+    {
+      "id": "25",
+      "name": "Insulated Lunch Box",
+      "description": "Leak-proof insulated lunch box with multiple compartments and utensils included.",
+      "price": 26.99,
+      "currency": "$",
+      "rating": 4.6,
+      "imageUrl": "https://picsum.photos/seed/Insulated-Lunch-Box/1200/900",
+      "category": "Kitchen",
+      "inStock": true,
+      "tags": [
+        "lunch box",
+        "insulated",
+        "leak-proof"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-08T12:00:00Z"
+    },
+    {
+      "id": "26",
+      "name": "Foam Roller Massage",
+      "description": "High-density foam roller for muscle recovery and deep tissue massage therapy.",
+      "price": 31.99,
+      "currency": "$",
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/Foam-Roller-Massage/1200/900",
+      "category": "Fitness",
+      "inStock": true,
+      "tags": [
+        "foam roller",
+        "massage",
+        "recovery"
+      ],
+      "attributes": [],
+      "registeredTimestamp": "2026-03-01T15:13:48.872Z"
+    },
+    {
+      "id": "27",
+      "name": "Wireless Earbuds Pro",
+      "description": "Premium wireless earbuds with active noise cancellation and transparency mode.",
+      "price": 159.99,
+      "currency": "$",
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/Wireless-Earbuds-Pros/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "earbuds",
+        "wireless",
+        "noise cancellation"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-06T12:00:00Z"
+    },
+    {
+      "id": "28",
+      "name": "Plant Humidifier",
+      "description": "Decorative humidifier designed for plant care with automatic humidity control.",
+      "price": 55.99,
+      "currency": "$",
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/Plant-Humidifier/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "humidifier",
+        "plants",
+        "humidity"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2026-03-03T15:13:48.872Z"
+    },
+    {
+      "id": "29",
+      "name": "Magnetic Phone Mount",
+      "description": "Strong magnetic car mount for phones with 360-degree rotation and easy installation.",
+      "price": 22.99,
+      "currency": "$",
+      "rating": 4.3,
+      "imageUrl": "https://picsum.photos/seed/Magnetic-Phone-Mount/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "phone mount",
+        "magnetic",
+        "car"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2023-12-04T12:00:00Z"
+    },
+    {
+      "id": "30",
+      "name": "Electric Kettle Smart",
+      "description": "Smart electric kettle with temperature control and keep-warm function via app.",
+      "price": 79.99,
+      "currency": "$",
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/Electric-Kettle-Smarts/1200/900",
+      "category": "Kitchen",
+      "inStock": true,
+      "tags": [
+        "electric kettle",
+        "smart",
+        "temperature control"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2026-03-05T15:13:48.872Z"
+    },
+    {
+      "id": "31",
+      "name": "Weighted Blanket Therapy",
+      "description": "Therapeutic weighted blanket for better sleep and anxiety relief, multiple weights available.",
+      "price": 89.99,
+      "currency": "$",
+      "rating": 4.7,
+      "imageUrl": "https://picsum.photos/seed/Weighted-Blanket-Therapy/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "weighted blanket",
+        "therapy",
+        "sleep"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2026-02-04T15:13:48.872Z"
+    },
+    {
+      "id": "32",
+      "name": "Knife Sharpener Electric",
+      "description": "Professional electric knife sharpener with precision angle guides for all blade types.",
+      "price": 45.99,
+      "currency": "$",
+      "rating": 4.1,
+      "imageUrl": "https://picsum.photos/seed/Knife-Sharpeners-Electric/1200/900",
+      "category": "Kitchen",
+      "inStock": true,
+      "tags": [
+        "knife sharpener",
+        "electric",
+        "professional"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2026-02-05T15:13:48.872Z"
+    },
+    {
+      "id": "33",
+      "name": "Air Purifier HEPA",
+      "description": "True HEPA air purifier removes 99.97% of allergens and pollutants from indoor air.",
+      "price": 179.99,
+      "currency": "$",
+      "rating": 4.6,
+      "imageUrl": "https://picsum.photos/seed/Air-Purifier-HEPA/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "air purifier",
+        "HEPA",
+        "allergens"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-11-30T12:00:00Z"
+    },
+    {
+      "id": "34",
+      "name": "Cordless Vacuum Handheld",
+      "description": "Lightweight cordless handheld vacuum perfect for quick cleanups and car interior.",
+      "price": 69.99,
+      "currency": "$",
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/Cordless-Vacuum-Handheld/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "vacuum",
+        "cordless",
+        "handheld"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2026-02-07T15:13:48.872Z"
+    },
+    {
+      "id": "35",
+      "name": "Reading Light Clip-On",
+      "description": "Portable clip-on reading light with adjustable brightness and flexible neck.",
+      "price": 18.99,
+      "currency": "$",
+      "rating": 4.3,
+      "imageUrl": "https://picsum.photos/seed/Reading-Lights-Clip-On/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "reading light",
+        "clip-on",
+        "portable"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-11-28T12:00:00Z"
+    },
+    {
+      "id": "36",
+      "name": "Spice Rack Magnetic",
+      "description": "Space-saving magnetic spice rack with clear jars and labels, perfect for any kitchen.",
+      "price": 36.99,
+      "currency": "$",
+      "rating": 4.5,
+      "imageUrl": "https://picsum.photos/seed/Spice-Rack-Magnetic/1200/900",
+      "category": "Kitchen",
+      "inStock": true,
+      "tags": [
+        "spice rack",
+        "magnetic",
+        "organization"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-11-27T12:00:00Z"
+    },
+    {
+      "id": "37",
+      "name": "Gaming Chair Ergonomic",
+      "description": "Ergonomic gaming chair with lumbar support, adjustable armrests, and premium materials.",
+      "price": 229.99,
+      "currency": "$",
+      "rating": 4.2,
+      "imageUrl": "https://picsum.photos/seed/Gaming-Chairs-Ergonomic/1200/900",
+      "category": "Office",
+      "inStock": true,
+      "tags": [
+        "gaming chair",
+        "ergonomic",
+        "lumbar support"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2023-11-26T12:00:00Z"
+    },
+    {
+      "id": "38",
+      "name": "Wireless Charging Pad",
+      "description": "Fast wireless charging pad compatible with all Qi-enabled devices and safety features.",
+      "price": 29.99,
+      "currency": "$",
+      "rating": 4.4,
+      "imageUrl": "https://picsum.photos/seed/Wireless-Charging-Pad/1200/900",
+      "category": "Electronics",
+      "inStock": true,
+      "tags": [
+        "wireless charging",
+        "Qi",
+        "fast charging"
+      ],
+      "attributes": [
+        "color"
+      ],
+      "registeredTimestamp": "2026-02-11T15:13:48.872Z"
+    },
+    {
+      "id": "39",
+      "name": "Bath Towel Set Luxury",
+      "description": "Ultra-soft luxury bath towel set made from premium cotton with superior absorbency.",
+      "price": 79.99,
+      "currency": "$",
+      "rating": 4.8,
+      "imageUrl": "https://picsum.photos/seed/Bath-Towels-Set Luxury/1200/900",
+      "category": "Home",
+      "inStock": true,
+      "tags": [
+        "bath towels",
+        "luxury",
+        "cotton"
+      ],
+      "attributes": [
+        "size",
+        "color"
+      ],
+      "registeredTimestamp": "2026-02-12T15:13:48.872Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": "1",
+      "productId": "1",
+      "user": "Alice Smith",
+      "rating": 5,
+      "registeredTimestamp": "2024-01-15T10:00:00Z",
+      "avatar": "https://picsum.photos/seed/Review-User-1/200/200",
+      "comment": "These headphones have amazing sound quality and the noise cancellation works wonders during my commutes."
+    },
+    {
+      "id": "2",
+      "productId": "2",
+      "user": "Bob Johnson",
+      "rating": 4,
+      "registeredTimestamp": "2024-02-20T14:30:00Z",
+      "avatar": "https://picsum.photos/seed/Review-User-2/200/200",
+      "comment": "The fitness tracker is great for monitoring my workouts, though I wish the battery lasted a bit longer."
+    },
+    {
+      "id": "3",
+      "productId": "2",
+      "user": "Catherine Lee",
+      "rating": 5,
+      "registeredTimestamp": "2024-03-10T09:45:00Z",
+      "avatar": "https://picsum.photos/seed/Review-User-3/200/200",
+      "comment": "This portable charger is a lifesaver! It’s compact and charges my phone quickly."
+    },
+    {
+      "id": "4",
+      "productId": "3",
+      "user": "David Kim",
+      "rating": 3,
+      "registeredTimestamp": "2024-04-05T16:20:00Z",
+      "avatar": "https://picsum.photos/seed/Review-User-4/200/200",
+      "comment": "The coffee grinder works well, but it’s a bit noisy. Overall, I’m satisfied with its performance."
+    },
+    {
+      "id": "5",
+      "productId": "1",
+      "user": "Eva Martinez",
+      "rating": 4,
+      "registeredTimestamp": "2024-05-12T11:15:00Z",
+      "avatar": "https://picsum.photos/seed/Review-User-5/200/200",
+      "comment": "Comfortable to wear for long periods, and the battery life is impressive."
+    },
+    {
+      "id": "6",
+      "productId": "3",
+      "user": "Frank Wilson",
+      "rating": 5,
+      "registeredTimestamp": "2024-06-01T13:50:00Z",
+      "avatar": "https://picsum.photos/seed/Review-User-6/200/200",
+      "comment": "I love this yoga mat! It provides great cushioning and grip during my practice."
+    },
+    {
+      "id": "7",
+      "productId": "2",
+      "user": "Grace Chen",
+      "rating": 4,
+      "registeredTimestamp": "2024-06-15T08:30:00Z",
+      "avatar": "https://picsum.photos/seed/Review-User-7/200/200",
+      "comment": "Good value for the price. It tracks my activities accurately."
+    },
+    {
+      "id": "8",
+      "productId": "2",
+      "user": "Juan Rodriguez",
+      "rating": 3,
+      "registeredTimestamp": "2024-04-05T16:20:00Z",
+      "avatar": "https://picsum.photos/seed/Review-User-4/200/200",
+      "comment": "The coffee grinder works well, but it’s a bit noisy. Overall, I’m satisfied with its performance."
+    }
+  ],
+  "features": [
+    {
+      "title": "Fast Performance",
+      "description": "Experience lightning-fast load times and seamless interactions with our optimized platform."
+    },
+    {
+      "title": "Secure Data",
+      "description": "Your data is protected with industry-leading security measures and encryption protocols."
+    },
+    {
+      "title": "24/7 Support",
+      "description": "Our dedicated support team is available around the clock to assist you with any needs."
+    },
+    {
+      "title": "User-Friendly Interface",
+      "description": "Navigate with ease using our intuitive and accessible user interface designed for all users."
+    },
+    {
+      "title": "Customizable Options",
+      "description": "Tailor your experience with a variety of customizable settings and preferences."
+    },
+    {
+      "title": "Regular Updates",
+      "description": "Stay ahead with frequent updates that bring new features and improvements to the platform."
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Juan",
+      "surname": "Baquero",
+      "email": "juan.baquero@redsift.io",
+      "message": "hola",
+      "id": 1
+    },
+    {
+      "name": "Pepe",
+      "surname": "Perez",
+      "email": "hola@pepe.com",
+      "message": "que pasaa\n",
+      "id": 2
+    }
+  ],
+  "waiting": [
+    {
+      "email": "juan.baquero@redsift.io",
+      "id": 1
+    },
+    {
+      "email": "pepe@pepe.com",
+      "id": 2
+    }
+  ],
+  "faqs": [
+    {
+      "question": "How do I reset my password?",
+      "answer": "To reset your password, go to the login page and click on 'Forgot Password'. Follow the instructions sent to your registered email."
+    },
+    {
+      "question": "Where can I view my purchase history?",
+      "answer": "You can view your purchase history in the 'My Account' section under 'Order History'."
+    },
+    {
+      "question": "How do I contact customer support?",
+      "answer": "You can contact our customer support team via the 'Contact Us' page or by emailing support@example.com."
+    },
+    {
+      "question": "What payment methods are accepted?",
+      "answer": "We accept various payment methods including credit/debit cards, PayPal, and bank transfers."
+    },
+    {
+      "question": "How do I track my order?",
+      "answer": "Once your order is shipped, you will receive a tracking number via email. You can use this number to track your order on our website."
+    }
+  ],
+  "shoppingCart": [
+    {
+      "userId": "1",
+      "productId": "2",
+      "quantity": 1,
+      "decorators": [
+        {
+          "key": "size",
+          "value": "L"
+        },
+        {
+          "key": "color",
+          "value": "blue"
+        }
+      ],
+      "id": 1
+    }
+  ],
+  "newsletterList": [
+    {
+      "email": "juan@hola.com",
+      "registeredTimestamp": "2026-02-04T13:20:41.898Z",
+      "id": 1
+    }
+  ]
+}

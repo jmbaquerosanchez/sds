@@ -1,17 +1,19 @@
 import { Footer, Header } from "compositions";
-import { AllProviders } from "data";
-import { Demo } from "./examples/Demo";
-import { FAQs } from "./examples/FAQs";
-import { PanelSections } from "./examples/PanelSections";
-import { PricingGrid } from "./examples/PricingGrid";
-import { ProductDetails } from "./examples/ProductDetails";
-import { ProductGrid } from "./examples/ProductGrid";
-import { WelcomeHero } from "./examples/WelcomeHero";
+import { AllProviders, useAuth } from "data";
+import { Demo } from "./ds/examples/Demo";
+import { FAQs } from "./ds/examples/FAQs";
+import { PanelSections } from "./ds/examples/PanelSections";
+import { PricingGrid } from "./ds/examples/PricingGrid";
+import { ProductDetails } from "./ds/examples/ProductDetails";
+import { ProductGrid } from "./ds/examples/ProductGrid";
+import { WelcomeHero } from "./ds/examples/WelcomeHero";
 
-function App() {
+function AppContent() {
+  const { user, login, logout } = useAuth();
+
   return (
-    <AllProviders>
-      <Header />
+    <>
+      <Header user={user} login={login} logout={logout} />
       <Demo />
       <WelcomeHero />
       <PanelSections />
@@ -20,6 +22,14 @@ function App() {
       <ProductDetails />
       <ProductGrid />
       <Footer />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <AllProviders>
+      <AppContent />
     </AllProviders>
   );
 }

@@ -1,0 +1,4 @@
+{
+  "/pricing/monthly": "/plans?interval=month",
+  "/pricing/annual": "/plans?interval=year"
+}
