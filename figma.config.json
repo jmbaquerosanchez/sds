@@ -4,7 +4,7 @@
     "exclude": ["src/ds/figma/icons/*"],
     "parser": "react",
     "git": {
-      "remote": "https://github.com/jmbaquerosanchez/sds-poc.git",
+      "remote": "https://github.com/jmbaquerosanchez/sds",
       "branch": "main"
     },
     "importPaths": {
