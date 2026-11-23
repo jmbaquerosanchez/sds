@@ -995,7 +995,7 @@
     {
       "name": "Juan",
       "surname": "Baquero",
-      "email": "juan.baquero@redsift.io",
+      "email": "juan.baquero@example.com",
       "message": "hola",
       "id": 1
     },
@@ -1009,7 +1009,7 @@
   ],
   "waiting": [
     {
-      "email": "juan.baquero@redsift.io",
+      "email": "juan.baquero@example.com",
       "id": 1
     },
     {
