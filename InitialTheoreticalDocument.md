@@ -1,4 +1,4 @@
-## **Initial theorical document for the systematic use of AI agents for user interface development**
+## **Initial theoretical document for the systematic use of AI agents for user interface development**
 
 ---
 
@@ -35,7 +35,7 @@ The first involves a Figma file containing tokens and components on the design s
 
 The second is a semantic layer for the use of components. These semantic rules can have diverse origins; for example, they may be defined by design (layout rules, spacing between components, responsive breakpoints, etc.), or they may be constraints of technical origin, such as those required to meet accessibility requirements.
 
-The third involves a Figma file on the client side where application screens are defined, and the repository of a Sift application on the development side.
+The third involves a Figma file on the client side where application screens are defined, and the application repository on the development side.
 
 ---
 

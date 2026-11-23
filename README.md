@@ -1,10 +1,17 @@
-# Simple Design System - POC
+# Simple Design System: AI-assisted UI development (POC)
 
-This project aims to create a proof of concept to prove that the assumptions about the advantages and benefits obtained from a design system in the defined state [here](InitialTheoreticalDocument.md) are real. That is, starting from a design system in such a state of definition, AI can be used intensively to generate code.
+A proof of concept, built on a fork of [Figma's Simple Design System](https://github.com/figma/sds), to test the assumptions of the [initial theoretical document](InitialTheoreticalDocument.md): that a design system defined to that level lets AI agents generate front-end code intensively and reliably.
+
+## What was done
+
+- **The design system, extended with AI from Figma:** new variants of `Button` and `AvatarGroup`, and new `Calendar`, `CalendarButton` and `CalendarSelect` components, with new design tokens from Figma Variables. Design and code are linked through Code Connect and the Figma MCP server.
+- **A test application generated with AI** from Figma's example pages: About, Contact, Pricing, Waiting list, Products and Product details, with protected routes, TanStack Query, a `json-server` mock back-end and Vitest.
+- **Context for the agents:** Copilot instructions for the design system, a front-end architecture guide, an app spec, third-party and custom agent skills, and a history of the main prompts (see [AI Integration](#ai-integration)).
+- **An improvement loop:** after each task, the errors and ambiguities in the agent's output were analyzed and the specs updated, so that each version of the system (Vx) produced the next one (Vx+1).
 
 ## Resources
 
-- [Storybook](https://figma.github.io/sds/storybook)
+- [Original SDS Storybook (Figma)](https://figma.github.io/sds/storybook)
 - [Figma File](https://www.figma.com/design/1OQXUrddcTOYCxEPP19ZFr/Simple-Design-System--Community-?node-id=3-5&m=dev)
 
 ## Initial Setup
@@ -133,7 +140,7 @@ A folder called `promptsHistory` exists in both `ds` and `app` to maintain a his
 
 In the `app` folder:
 
-- `FEArchitecture.md` - Compiles cross-cutting information about the architecture that the project should follow, according to the current onDMARC convention
+- `FEArchitecture.md` - Compiles cross-cutting information about the architecture that the project should follow
 - `specs/AppSpec.md` - Provides the AI with a high-level context of this application
 
 ### Copilot Instructions
